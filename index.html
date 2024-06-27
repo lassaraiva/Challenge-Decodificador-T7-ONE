@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, iniciarial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon-blue.ico">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="inputHeader">
+            <header>
+                <img id="logo" class="logo" src="assets/img/logo-alura.svg" alt="Logo da Alura">                
+            </header>
+
+            <section class="inputMessage">
+                <label hidden for="msgTextarea"></label>
+                <textarea id="msgTextarea" name="msgTextarea" id="textarea" rows="3" cols="3" placeholder="Digite seu texto aqui"></textarea>
+                
+                <div class="btn-container">
+                    <div class="requirements">
+                        <img src="assets/img/exclamation-circle.svg" alt="">
+                        <span>Por favor, insira apenas letras minúsculas e sem acento.</span>
+                    </div>
+                    <div class="btn-encriptar-decriptar">
+                        <button id="btnencriptar" class="btn dark-blue unselectable">Criptografar</button>
+                        <button id="btndecriptar" class="btn light-gray unselectable">Descriptografar</button>
+                </div>
+            </section>
+        </div>
+
+        <section id="result" class="result">
+            <div class="msgNoFound fade-in">
+                <img id="imgNoMsgFound" src="assets/img/no-message-found-blue.svg" alt="Nenhuma mensagem encontrada.">
+                <h3>Nenhuma mensagem encontrada!</h3>
+                <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <ul>
+            <li>Projeto desenvolvido por Larissa Saraiva</li>
+            <li>|</li>
+            <li>
+                <a href="https://github.com/lassaraiva" target="_blank"><img src="assets/img/github-icon.svg" alt="Logo do GitHub"> GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/lassaraiva/" target="_blank"><img src="assets/img/linkedin-icon.svg" alt="Logo do LinkedIn"> LinkedIn</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script src="assets/index.js"></script>
+</body>
+</html>
